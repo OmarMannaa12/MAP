@@ -1,4 +1,4 @@
-class_name q_set extends RefCounted
+class_name QS extends RefCounted
 
 enum q_types {
 	Choices,
@@ -13,7 +13,6 @@ var w_choices: Array[String]		#The wrong answer
 var tier: int
 var subject
 var period: int
-
 func init(input_str: String) -> void:
 	var regex := RegEx.new()
 	regex.compile("<(\\w+)>(.*?)<\\1>")  # Match tag-content pairs
