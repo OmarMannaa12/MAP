@@ -1,0 +1,10 @@
+{
+  "3": {
+    "question": "Chemical symbol for gold",
+    "right_answer": "Au",
+    "wrong_answers": ["Ag", "Fe", "Cu"],
+    "tier": 1,
+    "subject": "Chemistry",
+    "period": 2023
+  }
+}

@@ -1,6 +1,54 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0mpo35dw84p3"]
+[gd_scene load_steps=3 format=3 uid="uid://c0mpo35dw84p3"]
 
-[ext_resource type="Script" uid="uid://c1e1y8n0fr3g" path="res://start.gd" id="1_ots34"]
+[ext_resource type="Script" uid="uid://c1e1y8n0fr3g" path="res://question_manager.gd" id="1_ots34"]
+[ext_resource type="Texture2D" uid="uid://cd2w5i2unem3y" path="res://button1png.png" id="2_qn1rc"]
 
 [node name="Start" type="Node2D"]
 script = ExtResource("1_ots34")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 4.0
+offset_top = 16.0
+offset_right = 731.0
+offset_bottom = 1303.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -329.5
+offset_top = -203.5
+offset_right = 270.5
+offset_bottom = 396.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer"]
+layout_direction = 1
+layout_mode = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 11
+
+[node name="Button" type="Button" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("2_qn1rc")
+flat = true
+icon_alignment = 1
+
+[node name="Button2" type="Button" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "adgfsgfa"
